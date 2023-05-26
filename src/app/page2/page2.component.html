@@ -12,13 +12,14 @@
   color: black;
   text-align: center;
  }
-.h2{
-  color: white;
-  text-align: left;
-  font-size: 10px;
-  padding-left: 10px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+ .h2{
+  font: "Calibri";
+   color: white;
+  align-items: left;
+  font-size: 10;
+  padding-top: 4px;
+  padding-bottom: 2px;
+  padding-left: 6px;
  }
  .container {
  display: flex;
@@ -100,6 +101,18 @@
   margin: 8px 0;
   box-sizing: border-box;
 }
+.scrollable {
+  height: 396px; /* sets the height of the scrollable area */
+  overflow-y: scroll; /* enables vertical scrolling */
+}
+.list_cards{
+  height:130px;
+
+  border: 3px solid #70b1d9;
+  border-radius: 5px;
+
+
+}
 
 </style>
 </head>
@@ -107,9 +120,9 @@
 
 
 <div class="grid-container">
-    <img src="assets/icons/icon.png"  width="80" height="40" alt="Logo">
-    <img class="logo" src="assets/images/search.png"  width="318" height="32" alt="Logo"> 
-    <span class='h2'>find you swap</span> 
+    <img class="logo" src="assets/icons/icon.png"  width="80" height="40" alt="Logo">
+    <img src="assets/images/search.png"  width="318" height="32" alt="Logo"> 
+    <span class='h2'>find your swvcbxap</span> 
   <div style = "display: grid; grid-template-columns: auto auto auto auto; padding:4px;" >
     <button class="transparent-button">
         <img src="assets/images/fruits.png" alt="Icon" width="73" height="73">
@@ -124,11 +137,26 @@
         <img src="assets/images/sweet.png" alt="Icon" width="73" height="73">
     </button>
 </div>
-  <div class="grid-item">5</div>
-  <div class="grid-item">6</div>  
-  <div class="grid-item">7</div>
-  <div class="grid-item">8</div>
-  <div class="grid-item">9</div> 
+<div class="scrollable">
+<img src="assets/images/card.png"  width="318" height="103" alt="Logo"> 
+<span class='h2'>nearby offers          (3Km)</span>
+  <div  style = "display: grid;row-gap:5px;column-gap: 5px; grid-template-columns: auto auto; padding-top:10px;">
+  <div class="list_cards">
+  </div>
+  <div class="list_cards">
+  </div>
+  <div class="list_cards">
+  </div>
+  <div class="list_cards">
+  </div>
+  <div class="list_cards">
+  </div>
+  <div class="list_cards">
+  </div>
+  <div class="list_cards">
+  </div>
+  </div>  
+</div>
 </div>
 <div class="button_menu">
     <button routerLink="/page2" class="button_select">
