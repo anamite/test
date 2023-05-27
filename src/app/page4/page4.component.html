@@ -9,8 +9,10 @@
  color: white;
  }
  .H1{
-  color: black;
+  color: #82BD53;
+  padding-top: 0px;
   text-align: center;
+ }
  }
  .container {
  display: flex;
@@ -73,15 +75,28 @@
 </head>
 <body>
 
+  <div class="grid-container">
+    <img class="logo" src="assets/icons/icon.png"  width="80" height="40" alt="Logo">
+    <h1 class="H1">Shop n Share</h1>
+    <img src="assets/images/upload (2).png"  width="120" height="120" alt="Logo">
 
-<div class="grid-container">
-    <img class="logo" src="assets/icons/icon.png"  width="80" height="40" alt="Logo">  
-  <div class="grid-item">4</div>
-  <div class="grid-item">5</div>
-  <div class="grid-item">6</div>  
-  <div class="grid-item">7</div>
-  <div class="grid-item">8</div>
-  <div class="grid-item">9</div> 
+ <label for="login-id" style="padding-top: 7px;padding-bottom: 3px;">Item</label>
+ <input type="text" style="background-color: #8ac5dd; width: 300px; height: 28px; border: none;border-radius: 8px; padding: 5px;">
+
+ <label style=" padding-top: 7px;padding-bottom: 3px;">Quantity</label>
+ <input type="text" style="background-color: #8ac5dd; width: 300px; height: 28px; border: none;border-radius: 8px; padding: 5px;">
+
+ <label style="padding-top: 7px;padding-bottom: 3px;">When</label>
+ <input type="time" style="background-color: #8ac5dd; width: 300px; height: 28px; border: none;border-radius: 8px; padding: 5px;">
+
+ <label style=" padding-top: 7px;padding-bottom: 3px;">Where</label>
+ <input type="text" style="background-color: #8ac5dd; width: 300px; height: 28px; border: none;border-radius: 8px; padding: 5px;">
+
+
+
+ <div class="vertical-center">
+ <button   style="margin-top: 24px; background-color: #82BD53;border-radius: 5px;border: none;color: white;padding: 15px 32px;text-align: center;display: inline-block;font-size: 16px;">SHARE</button></div>
+
 </div>
 <div class="button_menu">
     <button routerLink="/page2" class="button">
